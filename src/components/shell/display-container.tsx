@@ -9,7 +9,7 @@ const DisplayContainer = ({
 }) => {
   return (
     <div
-      className="container rounded analysisview my-3 mx-auto"
+      className="container rounded analysisview mx-auto"
       style={{ maxWidth: maxWidth}}
       data-nosnippet
     >
