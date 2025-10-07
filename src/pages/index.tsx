@@ -10,7 +10,7 @@ import DisplayContainer from "@/components/shell/display-container";
 const IndexPage: React.FC<PageProps> = () => {
   return (
     <AppShell>
-      <DisplayContainer maxWidth="1140px">
+      <DisplayContainer className="max-w-[1140px]">
         <RangeAnalysisTool />
       </DisplayContainer>
       {/* <RangeAnalysisInfo /> */}
