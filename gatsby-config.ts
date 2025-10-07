@@ -2,18 +2,18 @@ import type { GatsbyConfig } from "gatsby";
 
 const config: GatsbyConfig = {
   siteMetadata: {
-    title: "openpokertools.com",
-    siteUrl: "https://openpokertools.com",
+    title: "pokertools",
+    siteUrl: "https://sboogway.github.io/pokertools",
   },
-  graphqlTypegen: true,
+  // graphqlTypegen: true,
   plugins: [
-    {
-      resolve: "gatsby-plugin-google-gtag",
-      options: {
-        trackingIds: ["UA-168084704-1"],
-        pluginConfig: { head: true },
-      },
-    },
+    // {
+    //   resolve: "gatsby-plugin-google-gtag",
+    //   options: {
+    //     trackingIds: ["UA-168084704-1"],
+    //     pluginConfig: { head: true },
+    //   },
+    // },
     {
       resolve: "gatsby-plugin-manifest",
       options: {
