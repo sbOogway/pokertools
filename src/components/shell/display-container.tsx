@@ -12,6 +12,7 @@ const DisplayContainer = ({
     <div
       className={cn("container rounded analysisview mx-auto ", className)}
       data-nosnippet
+      style={{backgroundColor: "#0e1117"}}
     >
       {children}
     </div>
