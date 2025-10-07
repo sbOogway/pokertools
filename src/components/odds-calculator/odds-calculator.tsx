@@ -25,13 +25,18 @@ interface HoleCardStats {
   potOdds?: string;
 }
 
-const OddsCalculator = () => {
+type options = {
+  players: number;
+
+}
+
+const OddsCalculator = (options: options) => {
   const [boardCards, setBoardCards] = useState<BoardCards>({});
   const holeCards: Array<HoleCards> = [];
   const setHoleCards: Array<Dispatch<SetStateAction<HoleCards>>> = [];
   const holeCardStats: Array<HoleCardStats> = [];
   const setHoleCardStats: Array<Dispatch<SetStateAction<HoleCardStats>>> = [];
-  for (let i = 0; i < 9; i++) {
+  for (let i = 0; i < options.players; i++) {
     const [h, setH] = useState<HoleCards>({});
     holeCards.push(h);
     setHoleCards.push(setH);
@@ -50,7 +55,7 @@ const OddsCalculator = () => {
       .map((holeCard) => [holeCard.hole1, holeCard.hole2]);
 
     if (activeHoles.length < 2) {
-      for (let i = 0; i < 9; i++) {
+      for (let i = 0; i < options.players; i++) {
         setHoleCardStats[i]({});
       }
     }
@@ -75,7 +80,7 @@ const OddsCalculator = () => {
 
     const scores = calculateHandHandEquities(activeHoles, board);
     let scoreIndex = 0;
-    for (let i = 0; i < 9; i++) {
+    for (let i = 0; i < options.players; i++) {
       if (holeCards[i].hole1 && holeCards[i].hole2) {
         const newStats = {
           win: scores[0][scoreIndex] / scores[2],
@@ -92,20 +97,20 @@ const OddsCalculator = () => {
 
   return (
     <PlayingCardProvider>
-      <div className="border-b p-3">
+      <div className="border-b p-3 dark-mode">
         <BoardProvider>
           <Board setBoardCards={setBoardCards} />
         </BoardProvider>
       </div>
-      <Table>
+      <Table className="dark-mode">
         <TableHeader>
           <TableRow>
-            <TableHead className="text-center" style={{ minWidth: "80px" }}>
+            <TableHead className="text-center dark-mode" style={{ minWidth: "80px" }}>
               Cards
             </TableHead>
-            <TableHead className="text-center">Win %</TableHead>
-            <TableHead className="text-center">Tie %</TableHead>
-            <TableHead className="text-center">Pot Odds</TableHead>
+            <TableHead className="text-center dark-mode">Win %</TableHead>
+            <TableHead className="text-center dark-mode">Tie %</TableHead>
+            {/* <TableHead className="text-center">Pot Odds</TableHead> */}
           </TableRow>
         </TableHeader>
         <TableBody>
@@ -124,9 +129,9 @@ const OddsCalculator = () => {
                   ? `${(holeCardStats[index].tie * 100).toFixed(1)}%`
                   : "-"}
               </TableCell>
-              <TableCell className="text-center">
+              {/* <TableCell className="text-center">
                 {holeCardStats[index].potOdds !== undefined ? holeCardStats[index].potOdds : "-"}
-              </TableCell>
+              </TableCell> */}
             </TableRow>
           ))}
         </TableBody>

@@ -71,7 +71,7 @@
 }
 
 .dark-mode {
-  background-color: hsl(220, 24%, 7%);
+  background-color: rgb(14, 17, 23);
   color: rgb(250, 250, 250);
 }
 
