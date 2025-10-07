@@ -32,6 +32,5 @@ export const Head: HeadFC = () => (
       content="poker equity calculator, poker odds calculator, poker odds, poker equity, poker calculator, equity calculator, texas hold'em odds calculator"
     />
     <meta name="language" content="english" />
-    <base href="/pokertools/"></base>
   </>
 );

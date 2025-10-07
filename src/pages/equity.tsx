@@ -29,7 +29,6 @@ export const Head: HeadFC = () => (
       content="poker range calculator, equity calculator, flop, flop analysis, flop equity, texas holdem, poker, poker analysis, poker calculator, poker equity, poker flop, poker odds, poker range, preflop, preflop equity, preflop range, range, range analysis, range equity, ranges"
     />
     <meta name="language" content="english" />
-    <base href="/pokertools/"></base>
 
   </>
 );

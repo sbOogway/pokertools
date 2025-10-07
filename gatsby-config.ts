@@ -1,6 +1,7 @@
 import type { GatsbyConfig } from "gatsby";
 
 const config: GatsbyConfig = {
+  pathPrefix: "/pokertools",
   siteMetadata: {
     title: "pokertools",
     siteUrl: "https://sboogway.github.io/pokertools",
