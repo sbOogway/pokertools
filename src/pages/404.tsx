@@ -22,5 +22,6 @@ export const Head: HeadFC = () => (
   <>
     <title>Page not found</title>
     <meta name="language" content="english" />
+    <base href="/pokertools/"></base>
   </>
 );

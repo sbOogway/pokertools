@@ -155,5 +155,6 @@ export const Head: HeadFC = () => (
     <meta name="description" content="Contact us, report a bug, suggest a feature." />
     <meta name="keywords" content="contact" />
     <meta name="language" content="english" />
+    <base href="/pokertools/"></base>
   </>
 );
