@@ -65,16 +65,16 @@ const PlayingCardPopover = ({
   return (
     <Popover open={open[index]} onOpenChange={(value) => setOpenAtIndex(index, value)}>
       <PopoverTrigger asChild>{children}</PopoverTrigger>
-      <PopoverContent className="w-90">
+      <PopoverContent className="w-90 dark-mode">
         <PopoverArrow className="popover-arrow" width={12} height={7} aria-hidden="true" />
-        <div className="grid gap-1">
+        <div className="grid gap-1 dark-mode">
           {SUITS.map((suit) => (
             <div key={suit} className="flex flex-row gap-1">
               {RANKS.map((rank) => {
                 const isSelected = playingCardState.rank === rank && playingCardState.suit === suit;
                 const isCardTaken = selectedCards.has((rank + suit) as Card);
                 const isAvailable = !isSelected && !isCardTaken;
-                const color = suit === "d" || suit === "h" ? "#df0000" : "#000";
+                const color = suit === "d" ? "#0000df" : suit === "s" ? "#000" : suit === "c" ? "#00df00" : "#df0000" ;
 
                 return (
                   <button
@@ -108,7 +108,7 @@ const PlayingCardPopover = ({
         </div>
         <Button
           variant="outline"
-          className="mt-2 w-full bg-white hover:bg-accent"
+          className="mt-2 w-full bg-white hover:bg-accent dark-mode-accent"
           onClick={handleClearCard}
         >
           Clear

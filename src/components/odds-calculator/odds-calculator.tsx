@@ -121,12 +121,12 @@ const OddsCalculator = (options: options) => {
               </TableCell>
               <TableCell className="text-center">
                 {holeCardStats[index].win !== undefined
-                  ? `${(holeCardStats[index].win * 100).toFixed(1)}%`
+                  ? `${(holeCardStats[index].win * 100).toFixed(2)}%`
                   : "-"}
               </TableCell>
               <TableCell className="text-center">
                 {holeCardStats[index].tie !== undefined
-                  ? `${(holeCardStats[index].tie * 100).toFixed(1)}%`
+                  ? `${(holeCardStats[index].tie * 100).toFixed(2)}%`
                   : "-"}
               </TableCell>
               {/* <TableCell className="text-center">

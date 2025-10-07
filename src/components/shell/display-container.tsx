@@ -1,16 +1,13 @@
 import React from "react";
 
 const DisplayContainer = ({
-  maxWidth,
   children,
 }: {
-  maxWidth: string;
   children: React.ReactNode;
 }) => {
   return (
     <div
-      className="container rounded analysisview mx-auto"
-      style={{ maxWidth: maxWidth}}
+      className="container rounded analysisview mx-auto min-w-[500px]"
       data-nosnippet
     >
       {children}

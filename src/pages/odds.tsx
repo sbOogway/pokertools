@@ -10,7 +10,7 @@ import DisplayContainer from "@/components/shell/display-container";
 const OddsPage: React.FC<PageProps> = () => {
   return (
     <AppShell>
-      <DisplayContainer maxWidth="500px">
+      <DisplayContainer >
         <OddsCalculator players={5} />
       </DisplayContainer>
       {/* <OddsCalculatorInfo /> */}
