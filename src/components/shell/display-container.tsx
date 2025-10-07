@@ -9,8 +9,8 @@ const DisplayContainer = ({
 }) => {
   return (
     <div
-      className="container rounded analysisview my-3 py-2 mx-auto"
-      style={{ maxWidth: maxWidth }}
+      className="container rounded analysisview my-3 mx-auto"
+      style={{ maxWidth: maxWidth}}
       data-nosnippet
     >
       {children}

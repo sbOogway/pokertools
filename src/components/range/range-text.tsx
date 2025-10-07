@@ -39,6 +39,7 @@ const RangeText = () => {
 
   return (
     <input
+      className="dark-mode-accent rounded p-2"
       type="text"
       style={{
         width: "100%",

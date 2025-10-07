@@ -11,7 +11,7 @@ import RangeText from "./range-text";
 const RangeSelector = ({ name, ...rangeProps }: RangeSelectorProps) => {
   return (
     <RangeProvider {...rangeProps}>
-      <div className="player p-3 w-[460px] mx-auto rounded">
+      <div className="p-3 w-[460px] mx-auto rounded">
         <h4 className="mb-2">
           {name ? name : "Range"}
           <RangePercent />

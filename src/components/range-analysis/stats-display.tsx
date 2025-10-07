@@ -96,7 +96,7 @@ const StatsDisplay = ({
 
   return (
     <Tabs defaultValue="preflop" className="w-full" onValueChange={updateSelectedTab}>
-      <TabsList className="grid w-full grid-cols-4">
+      <TabsList className="grid w-full grid-cols-4 dark-mode-accent">
         {ROUNDS.map((round) => (
           <TabsTrigger key={`${round}-tab`} value={round}>
             {ROUNDS_DISPLAY[round]}

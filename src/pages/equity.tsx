@@ -10,7 +10,7 @@ const EquityPage: React.FC<PageProps> = () => {
   return (
     <AppShell>
       <RangeEquityTool />
-      <RangeEquityInfo />
+      {/* <RangeEquityInfo /> */}
     </AppShell>
   );
 };

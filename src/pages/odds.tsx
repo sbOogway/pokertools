@@ -13,7 +13,7 @@ const OddsPage: React.FC<PageProps> = () => {
       <DisplayContainer maxWidth="500px">
         <OddsCalculator />
       </DisplayContainer>
-      <OddsCalculatorInfo />
+      {/* <OddsCalculatorInfo /> */}
     </AppShell>
   );
 };

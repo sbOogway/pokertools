@@ -74,7 +74,7 @@ const RangeAnalysisTool = () => {
 
   return (
     <>
-      <div className="grid min-[1100px]:grid-cols-12 md:grid-cols-8 grid-cols-4">
+      <div className="grid min-[1100px]:grid-cols-12 md:grid-cols-8 grid-cols-4 dark-mode">
         <div className="col-span-5">
           <RangeLoaderProvider>
             <PaintbrushButtonProvider>
@@ -89,7 +89,7 @@ const RangeAnalysisTool = () => {
           </RangeLoaderProvider>
         </div>
         <PlayingCardProvider>
-          <div className="col-span-3 p-3 max-w-[300px] mx-auto">
+          <div className="col-span-3 p-3 max-w-[300px] mx-auto ">
             <h4 className="mb-2">Board</h4>
             <BoardProvider>
               <Board setBoardCards={setBoardCards} />
@@ -110,7 +110,7 @@ const RangeAnalysisTool = () => {
             <Report combosReport={combosReport} equityReport={equityReport} />
           </div>
         </PlayingCardProvider>
-        <div className="col-span-4 p-3">
+        <div className="col-span-4 p-3 ">
           <h4 className="mb-2">Statistics</h4>
           <StatsDisplay
             stats={stats}
@@ -120,11 +120,11 @@ const RangeAnalysisTool = () => {
           />
         </div>
       </div>
-      <CombosDisplay
+      {/* <CombosDisplay
         keptToTurn={keptToTurn}
         keptToRiver={keptToRiver}
         keptToShowdown={keptToShowdown}
-      />
+      /> */}
     </>
   );
 };

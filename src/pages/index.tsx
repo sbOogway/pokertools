@@ -13,7 +13,7 @@ const IndexPage: React.FC<PageProps> = () => {
       <DisplayContainer maxWidth="1140px">
         <RangeAnalysisTool />
       </DisplayContainer>
-      <RangeAnalysisInfo />
+      {/* <RangeAnalysisInfo /> */}
     </AppShell>
   );
 };

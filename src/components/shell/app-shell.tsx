@@ -7,10 +7,10 @@ import { ShellNavbar } from "./shell-navbar";
 const AppShell = ({ children }: { children: React.ReactNode }) => {
   return (
     <div className="layout-container">
-      <ShellNavbar />
+      {/* <ShellNavbar /> */}
       <main className="main-content">{children}</main>
-      <ShellFooter />
-      <Toaster />
+      {/* <ShellFooter /> */}
+      {/* <Toaster /> */}
     </div>
   );
 };

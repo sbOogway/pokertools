@@ -66,8 +66,19 @@
   }
 }
 
+.dark-mode {
+  background-color: hsl(0, 0%, 12%);
+  color: hsl(210, 14%, 89%);
+}
+
+.dark-mode-accent {
+  background-color: hsl(0, 0%, 17%);
+  color: hsl(210, 6%, 79%);
+
+}
+
 body {
-  background-color: #1a1a1b;
+  /* background-color: #1a1a1b; */
 }
 
 input[type="checkbox"] {
@@ -200,7 +211,7 @@ p {
 }
 
 .player {
-  background-color: #fcfcfc;
+  /* background-color: #fcfcfc; */
   min-width: 460px;
 }
 
@@ -229,17 +240,17 @@ p {
 }
 
 .suited {
-  background-color: silver;
+  background-color: hsl(0, 0%, 25%);
   border-color: #eeeeee;
 }
 
 .offsuit {
-  background-color: gainsboro;
+  background-color: hsl(0, 0%, 14%);
   border-color: #eeeeee;
 }
 
 .pocketpair {
-  background-color: #9a9a9a;
+  background-color: hsl(0, 0%, 40%);
   border-color: #eeeeee;
 }
 

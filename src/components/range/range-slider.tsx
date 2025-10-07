@@ -86,6 +86,7 @@ const RangeSlider = () => {
           hide_from_to
           drag_interval
           onChange={handleSliderChange}
+          
         />
       </div>
     ),

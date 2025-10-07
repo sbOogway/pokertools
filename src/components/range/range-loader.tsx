@@ -90,17 +90,17 @@ const RangeLoader = () => {
         Delete range
       </Button>
       <PaintbrushButton className="w-10 mx-1" />
-      <div className="w-full ml-auto">
+      <div className="w-full ml-auto" >
         <Select onValueChange={handleLoadRange}>
-          <SelectTrigger>
+          <SelectTrigger className="dark-mode-accent">
             <SelectValue placeholder="<Empty>" />
           </SelectTrigger>
-          <SelectContent>
-            <SelectGroup>
+          <SelectContent className="dark-mode-accent">
+            <SelectGroup >
               <SelectLabel>Custom Ranges</SelectLabel>
               {userRanges.map((entry, index) => (
                 <SelectItem
-                  className="cursor-pointer"
+                  className="cursor-pointer "
                   key={`user:${index}`}
                   value={`user:${index}`}
                 >
@@ -112,7 +112,7 @@ const RangeLoader = () => {
               <SelectLabel>6-Max Opening Ranges</SelectLabel>
               {Object.keys(SIX_MAX_OPEN).map((key) => (
                 <SelectItem
-                  className="cursor-pointer"
+                  className="cursor-pointer "
                   key={`sixmax:${key}`}
                   value={`sixmax:${key}`}
                 >
@@ -125,7 +125,7 @@ const RangeLoader = () => {
               <SelectLabel>9-Max Opening Ranges</SelectLabel>
               {Object.keys(NINE_MAX_OPEN).map((key) => (
                 <SelectItem
-                  className="cursor-pointer"
+                  className="cursor-pointer dark-mode-accent"
                   key={`ninemax:${key}`}
                   value={`ninemax:${key}`}
                 >
